@@ -1,0 +1,21 @@
+.dog-logo {
+    position: fixed;
+    bottom: 0.1em;
+    right: 4em;
+    z-index: 1;
+}
+
+.custom-container{
+    padding: 2em 16em 2em 2em;
+}
+
+.grass{
+    height: 3em;
+    width: 100%;
+    background-image: url('../assets/grass.png');
+    background-size: auto 3em;
+    background-repeat: repeat-x; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

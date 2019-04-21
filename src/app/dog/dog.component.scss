@@ -1,0 +1,336 @@
+$furColour1 : #ffb141;
+$furColour2 : #F5832C;
+$tongueColour: #f43467;
+$collarColour : #779af8;
+$snoutColour: #544258;
+
+.dog {
+    width: 7.5em;
+    position: relative;
+}
+
+.body {
+    background: $furColour1;
+    border-radius: 18.75em 18.75em 0 0;
+    height: 18.75em
+}
+
+.beard {
+    width: 3.438em;
+    height: 4.063em;
+    background: $furColour2;
+    margin: 0 auto;
+    border-radius: 1.25em;
+    position: relative;
+
+    &:after {
+        content: '';
+        background: $furColour1;
+        width: 1.625em;
+        height: 0.813em;
+        border-radius: 0 0 1.563em 1.563em;
+        display: block;
+        margin: 0 auto;
+        transform: translateY(4em);
+    }
+
+    &:before {
+        content: '';
+        background: $snoutColour;
+        width: 1.250em;
+        height: 0.625em;
+        border-radius: 0 0 1.250em 1.250em;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.mouth {
+    background: $snoutColour;
+    width: 1.875em;
+    height: 0.938em;
+    border-radius: 0 0 1.875em 1.875em;
+    position: absolute;
+    top: 1.375em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-top: 0.188em solid #fff;
+    box-sizing: border-box;
+
+    .tongue {
+        width: 1.250em;
+        height: 1.563em;
+        border-radius: 0.313em 0.313em 0.625em 0.625em;
+        background: $tongueColour;
+        margin: 0 auto;
+        position: relative;
+        top: 0.313em;
+        transition: 300ms;
+        animation: grow .2s infinite alternate;
+    }
+}
+
+.eyes {
+    background: $furColour1;
+    width: 1.250em;
+    height: 1.500em;
+    border-radius: 1.250em 1.250em 0 0;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0.125em;
+
+    &:before,
+    &:after {
+        content: '';
+        width: 0.625em;
+        height: 0.625em;
+        background: #000;
+        display: block;
+        border-radius: 50%;
+        top: 50%;
+        position: absolute;
+        animation: squeeze 1.2s infinite;
+    }
+
+    &:before {
+        left: -0.813em;
+    }
+
+    &:after {
+        right: -0.813em;
+    }
+}
+
+.belt {
+    height: 1.250em;
+    background: $collarColour;
+    margin-top: 1.250em;
+    position: relative;
+
+    .locket {
+        width: 1.250em;
+        height: 1.250em;
+        background: #FFC442;
+        border-color: #000;
+        border-style: solid;
+        border-width: 0.063em;
+        margin: 0 auto;
+        border-radius: 50%;
+        transform: translateY(50%);
+    }
+
+    .dot {
+        width: 0.625em;
+        height: 0.625em;
+        background: $snoutColour;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        &.dot1 {
+            margin-left: 0.625em;
+        }
+
+        &.dot2 {
+            margin-left: 2.125em;
+        }
+
+        &.dot3 {
+            margin-left: 4.813em;
+        }
+
+        &.dot4 {
+            margin-left: 6.250em;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0.313em;
+        height: 0.625em;
+        background: $snoutColour;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &:before {
+        left: -0.313em;
+        border-radius: 0.625em 0 0 0.625em;
+    }
+
+    &:after {
+        right: -0.313em;
+        border-radius: 0 0.625em 0.625em 0;
+    }
+}
+
+.stomach {
+    width: 3.500em;
+    height: 8.125em;
+    background: $furColour2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 11.250em 11.250em 0 0;
+}
+
+.legs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.750em;
+
+    &:before,
+    &:after {
+        height: 0.750em;
+        border-radius: 1.250em 1.250em 0 0;
+        display: inline-block;
+        content: '';
+        position: absolute;
+        background: $furColour2;
+        width: 2.813em;
+    }
+
+    &:before {
+        left: -2.313em;
+    }
+
+    &:after {
+        right: -2.313em;
+    }
+
+    .left,
+    .right {
+        display: inline;
+        background: $furColour2;
+        position: absolute;
+        bottom: 0;
+
+        &:before {
+            content: '';
+            width: 1.750em;
+            height: 0.750em;
+            background: $furColour1;
+            border-radius: 1.250em 1.250em 0 0;
+            display: inline-block;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+
+    .left {
+        left: -0.750em;
+        border-radius: 1.250em 0 0 0;
+
+        &:before {
+            transform: translateX(-0.063em);
+        }
+    }
+
+    .right {
+        right: -0.20em;
+        border-radius: 0 1.250em 0 0;
+        z-index: 1;
+
+        &:before {
+            transform: translateX(-0.813em);
+        }
+    }
+}
+
+.ears {
+    position: absolute;
+    z-index: -1;
+    top: -1.250em;
+
+    &:after,
+    &:before {
+        content: '';
+        display: inline-block;
+        background: $snoutColour;
+        width: 2.500em;
+        height: 5.625em;
+        border-radius: 100% 100% 0 0;
+        border: 0.625em solid $furColour1;
+        box-sizing: border-box;
+    }
+
+    &:after {
+        transform: translateX(2.500em);
+    }
+}
+
+.tail {
+    background: $furColour1;
+    width: 0.875em;
+    height: 5.000em;
+    position: absolute;
+    z-index: -1;
+    right: 0.625em;
+    bottom: 2.500em;
+    transform: rotate(30deg);
+    border-radius: 0.875em;
+    transform-origin: bottom;
+    transition: 300ms;
+    animation: shake .15s infinite alternate;
+}
+
+.tag {
+    border-left: 0.313em solid $snoutColour;
+    border-bottom: 0.313em solid $snoutColour;
+    width: 500%;
+    height: 9.375em;
+    z-index: 2;
+    position: absolute;
+    top: 1.250em;
+    left: 6.250em;
+    box-sizing: border-box;
+    border-bottom-left-radius: 2.500em;
+}
+
+@keyframes squeeze {
+    90% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        transform: scale(1.2, 0.3);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes grow {
+    0% {
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        height: 1.875em;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}

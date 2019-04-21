@@ -1,0 +1,8 @@
+<app-navigation></app-navigation>
+
+<div class="custom-container" [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
+<app-dog class=dog-logo></app-dog>
+<div class="grass">&nbsp;</div>
