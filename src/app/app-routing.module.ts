@@ -1,4 +1,4 @@
-import { PricingComponent } from './pricing/pricing.component';
+import { ClassesComponent } from './classes/classes.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,10 +6,10 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FindUsComponent } from './find-us/find-us.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/dogshow', pathMatch: 'full' },
-  { path: 'dogshow', component: HomeComponent , data: {animation: 'Home'}},
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent , data: {animation: 'Home'}},
   { path: 'schedule', component: ScheduleComponent , data: {animation: 'Schedule'}},
-  { path: 'pricing', component: PricingComponent , data: {animation: 'Pricing'}},
+  { path: 'classes', component: ClassesComponent , data: {animation: 'Classes'}},
   { path: 'findus', component: FindUsComponent , data: {animation: 'FindUs'}},
   { path: '**', component: HomeComponent }
 ];
