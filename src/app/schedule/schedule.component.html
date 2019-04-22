@@ -1,5 +1,15 @@
-<p class="test">
-  schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!
-  schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!
-  schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!schedule works!
-</p>
+<table class="centered striped table-font">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let row of scheduleRows">
+      <td>{{row.time}}</td>
+      <td>{{row.activity}}</td>
+    </tr>
+  </tbody>
+</table>

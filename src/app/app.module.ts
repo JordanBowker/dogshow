@@ -7,7 +7,7 @@ import { DogComponent } from './dog/dog.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
-import { PricingComponent } from './pricing/pricing.component';
+import { ClassesComponent } from './classes/classes.component';
 import { FindUsComponent } from './find-us/find-us.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { FindUsComponent } from './find-us/find-us.component';
     NavigationComponent,
     ScheduleComponent,
     HomeComponent,
-    PricingComponent,
+    ClassesComponent,
     FindUsComponent
   ],
   imports: [

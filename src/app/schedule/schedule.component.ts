@@ -1,3 +1,4 @@
+import { SCHEDULE_ROWS } from './schedule-row';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
 
+  scheduleRows = SCHEDULE_ROWS;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
