@@ -4,7 +4,17 @@
     cursor: default;
 }
 
+.nav-bar{
+    background-color: #F5832C;
+    margin-bottom: 2em;
+}
+
 .link-text{
+    background-color: #F5832C;
     color: #fff;
     font-family: Open Sans;
+}
+
+.link-text.active{
+    background-color: #ffb141;
 }

@@ -1,19 +1,24 @@
-<nav class="navbar navbar-expand-lg bg-primary">
-  <div class="navbar-brand mb-0 h1 nav-header">Burley Dog Show</div>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link link-text" routerLink="/dogshow">Dog Show</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-text" routerLink="/schedule">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-text" routerLink="/pricing">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-text" routerLink="/findus">Find Us</a>
-      </li>
+<nav class="nav-bar">
+  <div class="container nav-wrapper hide-on-med-and-down">
+    <span class="brand-logo nav-header">Burley Dog Show</span>
+    <ul class="right">
+      <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
+      <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+      <li> <a class="link-text" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+      <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
     </ul>
   </div>
+  <div class="container nav-wrapper hide-on-large-only">
+      <span class="left brand-logo nav-header">Burley Dog Show</span>
+      <ul class="right">
+          <li><a class="menu-dropdown-trigger link-text" data-target="menu-dropdown"><i class="material-icons right">menu</i>Menu</a></li>
+        </ul>
+    </div>
 </nav>
+
+<ul id='menu-dropdown' class='dropdown-content'>
+    <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
+    <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+    <li> <a class="link-text" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+    <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
+</ul>

@@ -1,6 +1,7 @@
 $primary: #F5832C;
+$primary-color: color("lighten-2", "lighten-2");
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('../node_modules/materialize-css/dist/css/materialize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
