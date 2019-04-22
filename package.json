@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build-ghp": "ng build --prod --output-path docs --base-href /Burley-Dog-Show/",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
