@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $break-small: 600px;
+$break-large: 991px;
 
 html,
 body {
@@ -15,20 +16,26 @@ body {
 .title {
     color: #f43467;
     text-shadow: 0.108vw 0.156vw 0px #544258;
-    font-size: 5vw;
+    font-size: 40px;
     font-family: Indie Flower;
-    @media only screen and (max-width: $break-small) {
-        font-size: 30px;
+    @media only screen and (min-width: $break-small) {
+        font-size: 50px;
+    };
+    @media only screen and (min-width: $break-large) {
+        font-size: 70px;
     }
 }
 
 .secondary-title {
     color: #F5832C;
     text-shadow: 0.108vw 0.156vw 0px #544258;
-    font-size: 5vw;
+    font-size: 35px;
     font-family: Indie Flower;
-    @media only screen and (max-width: $break-small) {
-        font-size: 22px;
+    @media only screen and (min-width: $break-small) {
+        font-size: 40px;
+    }
+    @media only screen and (min-width: $break-large) {
+        font-size: 60px;
     }
 }
 
@@ -37,6 +44,17 @@ body {
     font-size: 30px;
     font-family: Indie Flower;
     @media only screen and (max-width: $break-small) {
-        font-size: 18px;
+        font-size: 25px;
     }
+}
+
+.custom-card{
+    border-radius: 40px;
+    background-color: #e8f0f3;    
+}
+
+.info-button{
+    border-radius: 40px;
+    background-color: #544258; 
+    color: #e8f0f3;
 }
