@@ -12,8 +12,15 @@
     background-color: #F5832C;
     color: #fff;
     font-family: Open Sans;
+    &:hover {
+        background-color: #ffb141;
+      }
+   
+}
+.link-text.active{
+    background-color: #896b90;
 }
 
-.link-text.active{
-    background-color: #ffb141;
+.nav-margin{
+    margin-bottom: 1em;
 }

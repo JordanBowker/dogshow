@@ -1,24 +1,29 @@
-<nav class="nav-bar">
-  <div class="container nav-wrapper hide-on-med-and-down">
-    <a class="brand-logo nav-header" routerLink="/home">Burley Dog Show</a>
-    <ul class="right">
-      <li> <a class="link-text" routerLink="/home" routerLinkActive="active">Dog Show</a></li>
-      <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
-      <li> <a class="link-text" routerLink="/classes" routerLinkActive="active">Classes</a></li>
-      <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
-    </ul>
-  </div>
-  <div class="container nav-wrapper hide-on-large-only">
-      <a class="left brand-logo nav-header"routerLink="/home">Burley Dog Show</a>
-      <ul class="right">
-          <li><a class="menu-dropdown-trigger link-text" data-target="menu-dropdown"><i class="material-icons right">menu</i>Menu</a></li>
-        </ul>
-    </div>
-</nav>
+<div class="navbar-fixed nav-margin">
 
-<ul id='menu-dropdown' class='dropdown-content'>
-    <li> <a class="link-text" routerLink="/home" routerLinkActive="active">Dog Show</a></li>
+  <nav class="nav-bar">
+    <div class="container nav-wrapper hide-on-med-and-down">
+      <a class="brand-logo nav-header" routerLink="/home">Burley Dog Show</a>
+      <ul class="right">
+        <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
+        <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+        <li> <a class="link-text" routerLink="/classes" routerLinkActive="active">Classes</a></li>
+        <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
+      </ul>
+    </div>
+    <div class="container nav-wrapper hide-on-large-only">
+      <a class="left brand-logo nav-header" routerLink="/home">Burley Dog Show</a>
+      <ul class="right">
+        <li><a class="menu-dropdown-trigger link-text" data-target="menu-dropdown"><i
+              class="material-icons right">menu</i>Menu</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul id='menu-dropdown' class='dropdown-content'>
+    <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
     <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
     <li> <a class="link-text" routerLink="/classes" routerLinkActive="active">Classes</a></li>
     <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
-</ul>
+  </ul>
+
+</div>

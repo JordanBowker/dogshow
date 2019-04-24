@@ -9,6 +9,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
 import { ClassesComponent } from './classes/classes.component';
 import { FindUsComponent } from './find-us/find-us.component';
+import { DogShowComponent } from './dog-show/dog-show.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FindUsComponent } from './find-us/find-us.component';
     ScheduleComponent,
     HomeComponent,
     ClassesComponent,
-    FindUsComponent
+    FindUsComponent,
+    DogShowComponent
   ],
   imports: [
     BrowserAnimationsModule,
