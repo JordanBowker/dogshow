@@ -4,7 +4,7 @@
       </div>
   <div class="container">
     <div class="col s12">
-      <div class="card-panel custom-card">
+      <div class="card-panel custom-card z-depth-2">
         <table class="centered table-font">
           <thead>
             <tr>
@@ -15,7 +15,7 @@
           </thead>
 
           <tbody>
-            <tr *ngFor="let row of scheduleRows">
+            <tr *ngFor="let row of scheduleRows" [ngClass]="row.cssClass">
               <td>{{row.start}}</td>
               <td>{{row.finish}}</td>
               <td>{{row.activity}}</td>

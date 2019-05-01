@@ -1,6 +1,7 @@
 @import url('../node_modules/materialize-css/dist/css/materialize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 $break-small: 600px;
 $break-large: 991px;
@@ -17,7 +18,7 @@ body {
     color: #f43467;
     text-shadow: 0.108vw 0.156vw 0px #544258;
     font-size: 40px;
-    font-family: Indie Flower;
+    font-family: Roboto;
     @media only screen and (min-width: $break-small) {
         font-size: 50px;
     };
@@ -27,10 +28,11 @@ body {
 }
 
 .secondary-title {
+    font-weight: bold;
     color: #F5832C;
     text-shadow: 0.108vw 0.156vw 0px #544258;
     font-size: 35px;
-    font-family: Indie Flower;
+    font-family: Roboto;
     @media only screen and (min-width: $break-small) {
         font-size: 40px;
     }
@@ -41,11 +43,26 @@ body {
 
 .information {
     color: #544258;
+    font-size: 20px;
+    font-family: Roboto;
+    @media only screen and (max-width: $break-small) {
+        font-size: 15px;
+    }
+}
+
+.information-home {
+    color: #544258;
     font-size: 30px;
-    font-family: Indie Flower;
+    font-family: Roboto;
     @media only screen and (max-width: $break-small) {
         font-size: 25px;
     }
+}
+
+.information-title{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f43467;
 }
 
 .custom-card{
