@@ -1,6 +1,7 @@
 # DogShow
 
 A prototype for the Burley in Wharfedale Summer festival dog show. Dog css taken from  [this code pen](https://codepen.io/narendrashetty/pen/YwypNo)
+[Demo on Github Pages](https://jordanbowker.github.io/Burley-Dog-Show/) 
 
 ## Angular CLI
 
