@@ -13,6 +13,7 @@ import { WhatsOnComponent } from './whats-on/whats-on.component';
 import { HeaderComponent } from './header/header.component';
 import { LinksComponent } from './links/links.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     WhatsOnComponent,
     HeaderComponent,
     LinksComponent,
-    GalleryComponent
+    GalleryComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserAnimationsModule,

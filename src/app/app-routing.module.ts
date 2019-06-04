@@ -6,6 +6,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FindUsComponent } from './find-us/find-us.component';
 import { WhatsOnComponent } from './whats-on/whats-on.component';
 import { LinksComponent } from './links/links.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'stalls', component: StallsComponent , data: {animation: 'Stalls'}},
   { path: 'findus', component: FindUsComponent , data: {animation: 'FindUs'}},
   { path: 'links', component: LinksComponent , data: {animation: 'Links'}},
+  { path: 'underConstruction', component: UnderConstructionComponent},
   { path: '**', component: HomeComponent }
 ];
 
