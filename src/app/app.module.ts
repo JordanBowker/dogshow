@@ -7,9 +7,12 @@ import { DogComponent } from './dog/dog.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
-import { ClassesComponent } from './classes/classes.component';
+import { StallsComponent } from './stalls/stalls.component';
 import { FindUsComponent } from './find-us/find-us.component';
-import { DogShowComponent } from './dog-show/dog-show.component';
+import { WhatsOnComponent } from './whats-on/whats-on.component';
+import { HeaderComponent } from './header/header.component';
+import { LinksComponent } from './links/links.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,12 @@ import { DogShowComponent } from './dog-show/dog-show.component';
     NavigationComponent,
     ScheduleComponent,
     HomeComponent,
-    ClassesComponent,
+    StallsComponent,
     FindUsComponent,
-    DogShowComponent
+    WhatsOnComponent,
+    HeaderComponent,
+    LinksComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserAnimationsModule,

@@ -1,26 +1,53 @@
-.nav-header{
-    color: #fff;
-    font-family: Indie Flower;
-}
-
-.nav-bar{
-    background-color: #F5832C;
-    margin-bottom: 2em;
-}
-
-.link-text{
-    background-color: #F5832C;
-    color: #fff;
+.main-nav-text{
+    color: white;
     font-family: Roboto;
-    &:hover {
-        background-color: #ffb141;
-      }
-   
-}
-.link-text.active{
-    background-color: #896b90;
 }
 
-.nav-margin{
-    margin-bottom: 1em;
+.main-nav-text.active{
+    background-color:#7a6280;
+    border-bottom:1px solid white;
+}
+
+.side-nav-text{
+    background-color:#544258;
+    color: white;
+    font-family: Roboto;
+    border-bottom:1px solid white;
+}
+
+.side-nav-text.active{
+    background-color:#7a6280;
+}
+
+.social-media{
+    color:white;
+    i {
+        font-size:20px
+    }
+}
+.social-media.active{
+    background-color:#7a6280;
+}
+
+.custom-nav{
+    height: 70px;
+    border-top:3px solid white;
+    border-bottom:3px solid white;
+    background-color: #544258;
+    margin-bottom: 20px;
+}
+
+.small-nav{
+    line-height: 64px;
+    height:64px
+}
+
+.nav-logo {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom:1px solid white;
+}
+
+.nav-left{
+    padding-left: 20px;
 }
