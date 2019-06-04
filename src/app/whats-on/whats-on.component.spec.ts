@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassesComponent } from './classes.component';
+import { WhatsOnComponent } from './whats-on.component';
 
-describe('ClassesComponent', () => {
-  let component: ClassesComponent;
-  let fixture: ComponentFixture<ClassesComponent>;
+describe('DogShowComponent', () => {
+  let component: WhatsOnComponent;
+  let fixture: ComponentFixture<WhatsOnComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClassesComponent ]
+      declarations: [ WhatsOnComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClassesComponent);
+    fixture = TestBed.createComponent(WhatsOnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

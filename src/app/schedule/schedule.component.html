@@ -1,28 +1,27 @@
-<div class="row center-align">
-    <div class="col s12 secondary-title">
-        Schedule
-      </div>
-  <div class="container">
-    <div class="col s12">
-      <div class="card-panel custom-card z-depth-2">
-        <table class="centered table-font">
-          <thead>
-            <tr>
-              <th>Start</th>
-              <th>Finish</th>
-              <th>Activity</th>
-            </tr>
-          </thead>
+<div class="row center-align custom-card">
+  <div class="col s12 title">
+    Schedule
+  </div>
+  <br />
+  <div class="col s12 information" style="padding: 20px;">
+    Below is a 'ruff' time table of the day. Times my vary slightly on the day. Classes are shown in red.
+    <br />
+    <table class="centered table-font" style="margin-top: 20px;">
+      <thead>
+        <tr>
+          <th>Start</th>
+          <th>Finish</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
 
-          <tbody>
-            <tr *ngFor="let row of scheduleRows" [ngClass]="row.cssClass">
-              <td>{{row.start}}</td>
-              <td>{{row.finish}}</td>
-              <td>{{row.activity}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+      <tbody>
+        <tr *ngFor="let row of scheduleRows" [ngClass]="row.cssClass">
+          <td>{{row.start}}</td>
+          <td>{{row.finish}}</td>
+          <td>{{row.activity}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

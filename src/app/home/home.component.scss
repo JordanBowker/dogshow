@@ -1,3 +1,31 @@
-.woof{
-    color: #F5832C;
+$break-small: 600px;
+
+.home-photo{
+    border:4px solid #544258;
+    max-width: 100%;
+    border-radius: 40px;
+    max-height: 540px;
+}
+
+
+.information-home {
+    color: #544258;
+    font-size: 30px;
+    font-family: Roboto;
+    @media only screen and (max-width: $break-small) {
+        font-size: 25px;
+    }
+}
+
+.information-home.sponsor {
+    color: #f43467;
+}
+
+.information-home a {
+    color: #544258;
+    font-size: 30px;
+    font-family: Roboto;
+    @media only screen and (max-width: $break-small) {
+        font-size: 25px;
+    }
 }

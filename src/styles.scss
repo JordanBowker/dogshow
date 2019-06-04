@@ -15,7 +15,7 @@ body {
 }
 
 .title {
-    color: #f43467;
+    color: #F5832C;
     text-shadow: 0.108vw 0.156vw 0px #544258;
     font-size: 40px;
     font-family: Roboto;
@@ -50,24 +50,29 @@ body {
     }
 }
 
-.information-home {
-    color: #544258;
-    font-size: 30px;
-    font-family: Roboto;
-    @media only screen and (max-width: $break-small) {
-        font-size: 25px;
-    }
+.information a {
+    color: #F5832C;
+    font-weight: bold;    
 }
 
 .information-title{
     text-decoration: underline;
     font-weight: bold;
     color: #f43467;
+    padding: 20px;
+    font-size: 25px;
+    @media only screen and (max-width: $break-small) {
+        font-size: 25px;
+    }
 }
 
 .custom-card{
     border-radius: 40px;
-    background-color: #e8f0f3;    
+    background-color: #e8f0f3;   
+    transition: box-shadow .25s;
+    padding: 20px 24px 0px 24px;
+    margin: .5em 0 1rem 0; 
+    border:4px solid #544258;
 }
 
 .info-button{
