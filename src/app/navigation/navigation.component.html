@@ -1,29 +1,36 @@
-<div class="navbar-fixed nav-margin">
+<nav class="custom-nav">
+  <div class="nav-wrapper">
+    <ul class="left hide-on-med-and-down nav-left" >
+        <li class="nav-logo"><a routerLink="/home" routerLinkActive="active" class="social-media"> <i
+          class="fa fa-bone"></i></a></li>
+      <li> <a class="main-nav-text" routerLink="/whatson" routerLinkActive="active">What's On</a></li>
+      <li><a class="main-nav-text" routerLink="/schedule" >Schedule</a></li>
+      <li> <a class="main-nav-text" routerLink="/underConstruction">Charities and Stalls</a></li>
+      <li> <a class="main-nav-text" routerLink="/underConstruction">Gallery</a></li>
+      <li> <a class="main-nav-text" routerLink="/underConstruction">Find Us</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down" > 
+      <li><a href="https://www.facebook.com/burleyfestival/" target="_blank" class="social-media"> <i
+            class="fab fa-facebook-square"></i></a></li>
+      <li> <a href="https://twitter.com/burleyfestival" target="_blank" class="social-media"> <i
+            class="fab fa-twitter-square"></i></a></li>
+      <li><a href="https://www.instagram.com/burleysummerfestival/" target="_blank" class="social-media"> <i
+            class="fab fa-instagram"></i></a></li>
+      <li><a href="mailto:burleydogshow@gmail.com" class="social-media"> <i class="fa fa-envelope"></i></a></li>
+    </ul>
+    <ul class="right hide-on-large-only small-nav">
+      <li><a class="menu-dropdown-trigger small-nav" data-target="menu-dropdown" >
+        <i class="material-icons right small-nav">menu</i>Menu</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <nav class="nav-bar">
-    <div class="container nav-wrapper hide-on-med-and-down">
-      <a class="brand-logo nav-header" routerLink="/home">Burley Dog Show</a>
-      <ul class="right">
-        <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
-        <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
-        <li> <a class="link-text" routerLink="/classes" routerLinkActive="active">Classes</a></li>
-        <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
-      </ul>
-    </div>
-    <div class="container nav-wrapper hide-on-large-only">
-      <a class="left brand-logo nav-header" routerLink="/home">Burley Dog Show</a>
-      <ul class="right">
-        <li><a class="menu-dropdown-trigger link-text" data-target="menu-dropdown"><i
-              class="material-icons right">menu</i>Menu</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul id='menu-dropdown' class='dropdown-content'>
-    <li> <a class="link-text" routerLink="/dogshow" routerLinkActive="active">Dog Show</a></li>
-    <li><a class="link-text" routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
-    <li> <a class="link-text" routerLink="/classes" routerLinkActive="active">Classes</a></li>
-    <li> <a class="link-text" routerLink="/findus" routerLinkActive="active">Find Us</a></li>
-  </ul>
-
-</div>
+<ul id='menu-dropdown' class='dropdown-content'>
+  <li> <a class="side-nav-text" routerLink="/home" routerLinkActive="active">Home</a></li>
+  <li> <a class="side-nav-text" routerLink="/whatson" routerLinkActive="active">What's On</a></li>
+  <li><a class="side-nav-text" routerLink="/schedule"  >Schedule</a></li>
+  <li> <a class="side-nav-text" routerLink="/underConstruction" >Charities and Stalls</a></li>
+  <li> <a class="side-nav-text" routerLink="/underConstruction" >Find Us</a></li>
+  <li> <a class="side-nav-text" routerLink="/underConstruction" >Links</a></li>
+</ul>
