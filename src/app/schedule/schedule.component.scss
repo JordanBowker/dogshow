@@ -1,9 +1,13 @@
-.table-font{
-    font-size: 18px;
-    font-family:Roboto;
-    color: #544258;
+.custom-table{
+    margin-top: 30px;
+}
+.custom-table tr td{
+   border:2px solid #544258;
+}
+.custom-table th{
+    border:2px solid #544258;
 }
 
 .classesFont{
-   color: #f43467;
+    background-color: #ffb14154;
 }
