@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build-ghp": "ng build --prod --output-path docs --base-href /dogshow/",
+    "build-ghp": "ng build --prod --output-path docs --base-href /dogshow/ && node add404.js",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "custom": "node add404.js"
   },
   "private": true,
   "dependencies": {
