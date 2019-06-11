@@ -20,6 +20,6 @@ export const SCHEDULE_ROWS = [
     new ScheduleRow('12:25', '13:25', 'Cheekiest Puppy, Best Rescue, Waggiest Tail, Best Trick', 'classesFont'),
     new ScheduleRow('13:30', '13:50', 'Terrier Racing Demonstration'),
     new ScheduleRow('13:50', '14:35', 'Handsomest Dog, Prettiest Female, Dog The Judge Would Like To Take Home', 'classesFont'),
-    new ScheduleRow('14:40', '15:10', 'Terrier Racing - Open Demo'),
+    new ScheduleRow('14:40', '15:10', 'Terrier Racing - Open Heats'),
     new ScheduleRow('15:10', '15:30', 'Terrier Racing - Finals')
 ];
