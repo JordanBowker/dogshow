@@ -1,3 +1,13 @@
-.classesFont{
-    color: #f43467;
+.stall{
+    padding: 5px;
+    border: 1px solid #544258;
+    margin: 10px;
+    border-radius: 20px;
+    color: #544258;
+    font-weight: normal;
+    &:hover {
+        background-color: #544258;
+        color: white;
+        cursor: pointer;
+      }
  }

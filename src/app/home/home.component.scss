@@ -17,15 +17,17 @@ $break-small: 600px;
     }
 }
 
-.information-home.sponsor {
-    color: #f43467;
-}
-
-.information-home a {
+.sponsor{
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid #544258;
+    margin: 10px;
+    border-radius: 20px;
     color: #544258;
-    font-size: 30px;
-    font-family: Roboto;
-    @media only screen and (max-width: $break-small) {
-        font-size: 25px;
-    }
-}
+    font-weight: normal;
+    &:hover {
+        background-color: #544258;
+        color: white;
+        cursor: pointer;
+      }
+  }

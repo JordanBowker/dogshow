@@ -1,30 +1,37 @@
 <div class="row center-align custom-card">
-    <div class="col s12 title">
-      Charities and Stalls
-    </div>
-    <br />
-    <div class="col s12 information" style="padding: 20px;margin-bottom:20px;">
-        This year we are pleased to have back many familiar faces: The Dog Physio, Kozi Dog, Stefs Pet Pantry, Friends
-        of Baxter, Animals Asia,
-        Linbee Dog Rehoming, Miss Mollies Dog Rescue and The Fairy Dog Mother.
-        <br />
-        We are also excited to be welcoming: Holly House Vets, Springbank Dog Collars
-
-        <br />
-        Why not grab some food whilst visiting the stalls? The Joy of Cake will be selling deliciously tempting
-        treats, or get a tasty burger from the barbecue run by the Red Lion.
-        Teas, coffee's and ice cream available on the day.
-
-        <br />
-        On the day we will be holding a raffle in support of the Guide Dogs for the blind.
-        <br />
-
-        Come and show your support.
-
-
-        <br />
-
-        Sponsors - the ryhddings
-    </div>
+  <div class="col s12 title">
+    Charities and Stalls
   </div>
- 
+  <br />
+  <div class="col s12 information">
+    This year we are pleased to have back many familiar faces and also excited to be welcoming some new ones.
+    Please browse the list below to see who is already confirmed. You can find out more about them, by following the link
+    to their pages.
+    <br />
+    On top of these great stalls, there will be refreshments and ice creams available on the day, along with a barbecue
+    organised by the Red Lion.
+    <div class="col s12 information-title" style="padding: 10px">
+      Charities
+    </div>
+    <ng-container *ngFor="let charity of charities">
+      <a class="col offset-s2 s8 stall" *ngIf="!charity.link">
+        {{charity.title}}
+      </a>
+      <a class="col offset-s2 s8 stall" *ngIf="charity.link" href="{{charity.link}}" target="_blank">
+        {{charity.title}}
+      </a>
+    </ng-container>
+
+    <div class="col s12 information-title" style="padding: 10px">
+      Stalls
+    </div>
+    <ng-container *ngFor="let stall of stalls">
+      <a class="col offset-s2 s8 stall" *ngIf="!stall.link">
+        {{stall.title}}
+      </a>
+      <a class="col offset-s2 s8 stall" *ngIf="stall.link" href="{{stall.link}}" target="_blank">
+        {{stall.title}}
+      </a>
+    </ng-container>
+  </div>
+</div>
