@@ -5,33 +5,20 @@
   <br />
   <div class="col s12 information">
     This year we are pleased to have back many familiar faces and also excited to be welcoming some new ones.
-    Please browse the list below to see who is already confirmed. You can find out more about them, by following the link
-    to their pages.
+    Please browse the list below to see who is already confirmed. You can find out more about them by following the
+    link to their pages.
     <br />
     On top of these great stalls, there will be refreshments and ice creams available on the day, along with a barbecue
     organised by the Red Lion.
-    <div class="col s12 information-title" style="padding: 10px">
-      Charities
+    <div class="col s12">
+      <ng-container *ngFor="let stall of stalls">
+        <a class="col offset-s2 s8 stall" *ngIf="!stall.link">
+          {{stall.title}}
+        </a>
+        <a class="col offset-s2 s8 stall" *ngIf="stall.link" href="{{stall.link}}" target="_blank">
+          {{stall.title}}
+        </a>
+      </ng-container>
     </div>
-    <ng-container *ngFor="let charity of charities">
-      <a class="col offset-s2 s8 stall" *ngIf="!charity.link">
-        {{charity.title}}
-      </a>
-      <a class="col offset-s2 s8 stall" *ngIf="charity.link" href="{{charity.link}}" target="_blank">
-        {{charity.title}}
-      </a>
-    </ng-container>
-
-    <div class="col s12 information-title" style="padding: 10px">
-      Stalls
-    </div>
-    <ng-container *ngFor="let stall of stalls">
-      <a class="col offset-s2 s8 stall" *ngIf="!stall.link">
-        {{stall.title}}
-      </a>
-      <a class="col offset-s2 s8 stall" *ngIf="stall.link" href="{{stall.link}}" target="_blank">
-        {{stall.title}}
-      </a>
-    </ng-container>
   </div>
 </div>

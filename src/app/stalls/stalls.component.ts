@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { STALLS, CHARITIES } from './stall';
+import { STALLS } from './stall';
 
 @Component({
   selector: 'app-stalls',
@@ -8,8 +8,9 @@ import { STALLS, CHARITIES } from './stall';
 })
 export class StallsComponent implements OnInit {
 
-  stalls = STALLS;
-  charities = CHARITIES;
+  stalls = STALLS.sort(function(a, b){
+    return a.title.localeCompare(b.title);
+});
 
   constructor() { }
 
