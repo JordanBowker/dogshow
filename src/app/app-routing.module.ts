@@ -7,6 +7,7 @@ import { FindUsComponent } from './find-us/find-us.component';
 import { WhatsOnComponent } from './whats-on/whats-on.component';
 import { LinksComponent } from './links/links.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'whatson', component: WhatsOnComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'stalls', component: StallsComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: 'findus', component: FindUsComponent },
   { path: 'links', component: LinksComponent },
   { path: 'underConstruction', component: UnderConstructionComponent },

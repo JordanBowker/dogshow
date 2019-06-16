@@ -1,0 +1,49 @@
+$break-small: 600px;
+$break-large: 991px;
+
+.photo-container{
+    padding: 10px;
+}
+
+.photo-container img{
+    outline-width: 0;
+    border:4px solid #544258;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.main-photo img{
+    border:4px solid #544258;
+    max-width: 100%;
+    border-radius: 40px;
+    max-height: 300px;
+    min-height: 300px;
+    @media only screen and (min-width: $break-small) {
+        max-height: 400px;
+        min-height: 400px;
+    };
+    @media only screen and (min-width: $break-large) {
+        max-height: 500px;
+        min-height: 500px;
+    }
+}
+
+.arrow-left{
+    padding-right: 20px;
+    font-size: 30px;
+    color:  #544258;
+    cursor: pointer;
+}
+
+.arrow-right{
+    padding-left: 20px;
+    font-size: 30px;
+    color:  #544258;
+    cursor: pointer;
+}
+
+.dog-icon{
+    font-size: 30px;
+    color:  #544258;
+}

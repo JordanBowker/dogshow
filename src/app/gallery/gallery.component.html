@@ -1,3 +1,17 @@
-<p>
-  gallery works!
-</p>
+<div #card class="row center-align custom-card">
+    <div  class="col s12 title" style="margin-bottom:10px">
+      Gallery
+    </div>
+    <br />
+       <ng-container *ngFor="let image of images">
+        <div class="col s12 main-photo" ><img src="assets/gallery/photo{{image.imageNumber}}.jpg" [hidden]="!image.show" ></div>
+    </ng-container>
+    <div  class="col s12" >
+        <i (click)="scrollImages(-1)" class="fas fa-long-arrow-alt-left arrow-left"></i>
+        <i class="fas fa-dog dog-icon"></i>
+        <i (click)="scrollImages(1)" class="fas fa-long-arrow-alt-right arrow-right"></i>
+      </div>
+    <ng-container *ngFor="let image of images">
+        <a class="col s4 m2 photo-container"><img src="assets/gallery/photo{{image.imageNumber}}Thumb.jpg" (click)="changeMainImage(image.imageNumber)"></a>
+    </ng-container>
+  </div>
