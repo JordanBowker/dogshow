@@ -11,7 +11,7 @@ export class GalleryComponent implements OnInit {
   private _defaultImageNumber =3;
   images = IMAGES;
 
-  @ViewChild('card') cardElement: ElementRef;
+  @ViewChild('card', { static: true }) cardElement: ElementRef;
 
   constructor() { }
 
