@@ -19,7 +19,7 @@ export class Stall {
     new Stall('Linbee Dog Rehoming', 'http://www.linbee.co.uk/'),
     new Stall('Miss Mollies Dog Rescue', 'http://www.missmolliesrescue.org.uk/'),
     new Stall('Holly House Vets', 'https://www.hollyhousevets.co.uk/'),
-    new Stall('Joy of Cake', 'https://www.facebook.com/wharfedalecakes/'),
+    new Stall('The Joy of Cake', 'https://www.facebook.com/wharfedalecakes/'),
     new Stall('Murphy\'s Army', 'http://www.murphysarmy.org/'),
     new Stall('Springbank Dog Collars'),   
   ];
