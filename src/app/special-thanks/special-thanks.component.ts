@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Link } from '../shared/link';
 
 @Component({
-  selector: 'app-stalls',
-  templateUrl: './stalls.component.html',
-  styleUrls: ['./stalls.component.scss']
+  selector: 'app-special-thanks',
+  templateUrl: './special-thanks.component.html',
+  styleUrls: ['./special-thanks.component.scss']
 })
-export class StallsComponent implements OnInit {
+export class SpecialThanksComponent implements OnInit {
 
-  private _stallLinks = [
+  private _thankYouLinks = [
     new Link('Guide Dogs For The Blind', 'https://www.guidedogs.org.uk/'),
     new Link('Animals Asia', 'https://www.animalsasia.org/'),
     new Link('Stefs Pet Pantry', 'https://www.stefspetpantry.com/'),
@@ -24,7 +24,7 @@ export class StallsComponent implements OnInit {
     new Link('Springbank Dog Collars'),
   ];
 
-  stallLinks = this._stallLinks.sort(function (a, b) {
+  thankYouLinks = this._thankYouLinks.sort(function (a, b) {
     return a.title.localeCompare(b.title);
   });
 

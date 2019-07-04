@@ -1,0 +1,28 @@
+<div class="row center-align custom-card">
+  <div class="col s12 title">
+    Special Thanks
+  </div>
+  <br />
+  <div class="col s12 information">
+    The annual dog show would not be possible without our brilliant volunteers who give up their free time planning,
+    organising and running the event. We would like to thank all our volunteers who help make the dog show a day that
+    is enjoyed by so many and raises money for both the local community and important charities.
+    <br />
+    If you would like to help out with the organisation of the show, or could spare a few hours on the day, please email
+    us on <a href="mailto:burleydogshow@gmail.com">burleydogshow@gmail.com</a>.
+    <br />
+    We would also like to thank the companies that provide us with generous contributions that go towards our class and
+    raffle prizes.
+    You can find out more about the companies by following the link to their pages below.
+    <div class="col s12">
+      <ng-container *ngFor="let thankYouLink of thankYouLinks">
+        <a class="col offset-s2 s8 info-Link" *ngIf="!thankYouLink.url">
+          {{thankYouLink.title}}
+        </a>
+        <a class="col offset-s2 s8 info-Link" *ngIf="thankYouLink.url" href="{{thankYouLink.url}}" target="_blank">
+          {{thankYouLink.title}}
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</div>

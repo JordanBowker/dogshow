@@ -11,12 +11,12 @@
     On top of these great stalls, there will be refreshments and ice creams available on the day, along with a barbecue
     organised by the Red Lion.
     <div class="col s12">
-      <ng-container *ngFor="let stall of stalls">
-        <a class="col offset-s2 s8 stall" *ngIf="!stall.link">
-          {{stall.title}}
+      <ng-container *ngFor="let stallLink of stallLinks">
+        <a class="col offset-s2 s8 info-Link" *ngIf="!stallLink.url">
+          {{stallLink.title}}
         </a>
-        <a class="col offset-s2 s8 stall" *ngIf="stall.link" href="{{stall.link}}" target="_blank">
-          {{stall.title}}
+        <a class="col offset-s2 s8 info-Link" *ngIf="stallLink.url" href="{{stallLink.url}}" target="_blank">
+          {{stallLink.title}}
         </a>
       </ng-container>
     </div>

@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { LinksComponent } from './links/links.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { SpecialThanksComponent } from './special-thanks/special-thanks.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     HeaderComponent,
     LinksComponent,
     GalleryComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    SpecialThanksComponent
   ],
   imports: [
     BrowserAnimationsModule,

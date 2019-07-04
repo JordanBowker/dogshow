@@ -8,6 +8,7 @@ import { WhatsOnComponent } from './whats-on/whats-on.component';
 import { LinksComponent } from './links/links.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { SpecialThanksComponent } from './special-thanks/special-thanks.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'findus', component: FindUsComponent },
   { path: 'links', component: LinksComponent },
   { path: 'underConstruction', component: UnderConstructionComponent },
+  { path: 'specialThanks', component: SpecialThanksComponent },
   { path: '**', component: HomeComponent }
 ];
 
