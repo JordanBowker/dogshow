@@ -14,12 +14,10 @@ export class ScheduleRow {
 
 export const SCHEDULE_ROWS = [
     new ScheduleRow('10:15', '-', 'Registration Opens'),
-    new ScheduleRow('10:50', '11:00', 'Shutzhund Introduction'),
-    new ScheduleRow('11:00', '11:45', 'Golden Oldies, Young Handlers 11-16ys, Young Handlers 6-10ys', 'classesFont'),
-    new ScheduleRow('11:55', '12:10', 'Shutzhund Demonstration'),
-    new ScheduleRow('12:25', '13:25', 'Cheekiest Puppy, Best Rescue, Waggiest Tail, Best Trick', 'classesFont'),
-    new ScheduleRow('13:30', '13:50', 'Terrier Racing Demonstration'),
-    new ScheduleRow('13:50', '14:35', 'Handsomest Dog, Prettiest Female, Dog The Judge Would Like To Take Home', 'classesFont'),
-    new ScheduleRow('14:40', '15:10', 'Terrier Racing - Open Heats'),
-    new ScheduleRow('15:10', '15:30', 'Terrier Racing - Finals')
+    new ScheduleRow('10:45', '10:55', 'Shutzhund Introduction'),
+    new ScheduleRow('11:00', '12:00', 'Golden Oldies, Young Handlers 11-16ys, Young Handlers 6-10ys, Cheekiest Puppy', 'classesFont'),
+    new ScheduleRow('12:00', '12:15', 'Heads and Tails Guide Dogs Fund Raiser'),
+    new ScheduleRow('12:20', '13:10', 'Shutzhund Demonstration & Have A Go'),
+    new ScheduleRow('13:15', '14:15', 'Best Rescue, Waggiest Tail, Best Trick, Dog The Judge Would Like To Take Home', 'classesFont'),
+    new ScheduleRow('14:30', '15:30', 'Handsomest Non-Pedigree Dog, Prettiest Non-Pedigree Female, Handsomest Pedigree Dog, Prettiest Pedigree Female', 'classesFont'),
 ];

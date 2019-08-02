@@ -16,7 +16,7 @@
       </thead>
 
       <tbody>
-        <tr *ngFor="let row of scheduleRows" [ngClass]="row.cssClass">
+        <tr *ngFor="let row of scheduleRows" [ngClass]="row.cssClass" class="activityRow">
           <td>{{row.start}}</td>
           <td>{{row.finish}}</td>
           <td>{{row.activity}}</td>
